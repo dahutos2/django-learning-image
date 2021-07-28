@@ -18,11 +18,6 @@ class AboutView(TemplateView):
         ctxt = super().get_context_data()
         ctxt["skills"] = [
             "Python",
-            "C++",
-            "Javascript",
-            "Rust",
-            "Ruby",
-            "PHP"
         ]
-        ctxt["num_services"] = 1234567
+        ctxt["num_services"] = 298
         return ctxt
