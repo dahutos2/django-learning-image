@@ -1,15 +1,17 @@
 {% load static %}
-<!doctype HTML>
-<html>
+<!doctype HTml>
+<html lang="ja">
     <head>
-        <link rel="stylesheet" href="{% static 'main.css' %}">
+        <title>チュートリアル</title>
+        <link rel='stylesheet' href="{% static 'main.css' %}">
     </head>
     <body>
         {% include "_navbar.html" %}
-        <div>
-            {% block main %}
-            {% endblock %}
-        </div>
+
+        {% block main %}
+        コンテンツがありません
+        {% endblock %}
+
         {% include "_footer.html" %}
     </body>
 </html>
